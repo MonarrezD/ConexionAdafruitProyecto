@@ -37,13 +37,11 @@ void loop() {
 
   int valorInfrarojo = digitalRead(pinInfrarojo);
     if (valorInfrarojo == HIGH){
-      Serial.print("Infrarojo: ");
-      Serial.println(valorInfrarojo);
+      Serial.println("inf:1");
       Infrarojo->save(valorInfrarojo);
       delay(3000);
     }else{
-      Serial.print("Infrarojo: ");
-      Serial.println(valorInfrarojo);
+      Serial.println("inf:0");
       Infrarojo->save(valorInfrarojo);
       delay(500);
     }
